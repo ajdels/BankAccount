@@ -7,6 +7,9 @@ public class Main {
         var yourAccount = new BankAccount(2000,0.05f);
         myAccount.deposit(1000);
         myAccount.interest();
+        yourAccount.interest();
+        System.out.println("Your account with ID: " + yourAccount.getAccountID() + "currently has a balance of: "+yourAccount.checkBalance());
+        System.out.println("Your account currently has a balance of "+yourAccount.checkBalance());
         var didSuceeed = myAccount.withdraw(2000);
         if(didSuceeed)
             System.out.println("Successfully made withdrawl");
