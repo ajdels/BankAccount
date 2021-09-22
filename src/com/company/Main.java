@@ -14,7 +14,7 @@ public class Main {
         if(didSuceeed)
             System.out.println("Successfully made withdrawl");
         else
-            System.out.println("Could not withdraw, current balance is " + myAccount.checkBalance());
-
+            System.out.println("Could not withdraw, from account number " +  myAccount.getAccountID() +
+    "Current balance is " + myAccount.checkBalance());
     }
 }
