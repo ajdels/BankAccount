@@ -10,6 +10,10 @@ public class BankAccount {
     public void deposit(double amount) {
         balance = balance + amount;
     }
+    public BankAccount(double initialBalance, float initialRate){
+        balance = initialBalance;
+        interestRate = initialRate;
+    }
     public double interest(){
         var interest = balance * interestRate;
         balance += interest;
