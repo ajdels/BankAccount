@@ -40,7 +40,7 @@ public class Bank {
         var newCustomerTaxID = inputReader.nextInt();
         var newCustomer = new Customer(newCustomerName, newCustomerTaxID);
         allCustomers.add(newCustomer);
-        System.out.println("Success! Created new Customer with name: "+ newCustomer.getName()+ " with TaxID: "+ newCustomer.getID());
+        System.out.println("Success! Created new Customer with name: "+ newCustomer.getName()+ " with TaxID (SSN): "+ newCustomer.getID());
 
 
     }
